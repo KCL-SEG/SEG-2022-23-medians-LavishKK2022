@@ -9,7 +9,8 @@ while True:
         if length % 2 == 1:
             print(numbers[round(length/2)])
         else:
-            print((numbers[length/2] + numbers[length/2 - 1])/2)   
+            print(length//2)
+            print((numbers[length//2] + numbers[(length//2) - 1])/2)   
         
     except ValueError:
         print("Some input could not be converted to a number!")
